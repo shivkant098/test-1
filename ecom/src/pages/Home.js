@@ -17,6 +17,38 @@ const Home = () => {
           <button className='button1'>Shop Now</button>
         </div>
       </div>
+      <div className='features'>
+        <div className='f1'>
+          <i class='fa fa-truck'></i>
+          <h4>Free Shipping</h4>
+          <p>Above $5 Only
+
+          </p>
+        </div>
+        <div className='f2'>
+          <h4>Certified Organic
+          </h4>
+          <p>100% Guarantee
+
+          </p>
+        </div>
+
+        <div className='f3'>
+          <h4>Huge Savings
+          </h4>
+          <p>At Lowest Price
+
+          </p>
+        </div>
+
+        <div className='f4'>
+          <h4>Easy Returns
+          </h4>
+          <p></p>
+        </div>
+
+
+      </div>
 
 
     </div>
