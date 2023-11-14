@@ -49,7 +49,13 @@ const Home = () => {
 
 
       </div>
-
+    <div className='content'>
+      <div className='text1'>
+    <h2>Best Selling Products
+</h2>
+<img src='https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png' alt='imga'/>
+</div>
+    </div>
 
     </div>
   )
