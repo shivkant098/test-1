@@ -19,7 +19,7 @@ const Home = () => {
       </div>
       <div className='features'>
         <div className='f1'>
-          <i class='fa fa-truck'></i>
+          {/* <i class='fa fa-truck'></i> */}
           <h4>Free Shipping</h4>
           <p>Above $5 Only
 
@@ -44,18 +44,112 @@ const Home = () => {
         <div className='f4'>
           <h4>Easy Returns
           </h4>
-          <p></p>
+          <p>No Questions Asked
+
+          </p>
         </div>
 
 
       </div>
-    <div className='content'>
-      <div className='text1'>
-    <h2>Best Selling Products
-</h2>
-<img src='https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png' alt='imga'/>
-</div>
-    </div>
+      <div className='content'>
+        <div className='text1'>
+          <h2>Best Selling Products</h2>
+          <br />
+          <img src='https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png' alt='imga' />
+        </div>
+      </div>
+
+      <div className='product'>
+        <div className='product-item1'>
+          <div className='product-main'>
+            <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/coffee-asorted-300x300.jpg" alt='product-pic' />
+            <p>Groceries</p>
+            <h2>Assorted coffee</h2>
+            {/* </div> */}
+            <div className='rating'>
+              <span className="fa fa-star checked"></span>
+              <span className="fa fa-star checked"></span>
+              <span className="fa fa-star checked"></span>
+              <span className="fa fa-star"></span>
+              <span className="fa fa-star"></span>
+            </div>
+          </div>
+        </div>
+
+        <div className='product-item2'>
+          <div className='product-main'>
+            <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/sanitizer-300x300.jpg" alt='product-pic' />
+            <p>Groceries</p>
+            <h2>Assorted coffee</h2>
+          </div>
+          <div className='rating'>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star"></span>
+            <span className="fa fa-star"></span>
+          </div>
+        </div>
+        <div className='product-item3'>
+          <div className='product-main'>
+            <img src='https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/red-chillies-300x300.jpg' alt="im" />
+            <p>Groceries</p>
+            <h2>Assorted coffee</h2>
+          </div>
+          <div className='rating'>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star"></span>
+            <span className="fa fa-star"></span>
+          </div>
+        </div>
+
+        <div className='product-item4'>
+          <div className='product-main'>
+            <span className='sale'>Sale!</span>
+            <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/edible-oil-300x300.jpg" alt="im" />
+            <p>Groceries</p>
+            <h2>Assorted coffee</h2>
+          </div>
+          <div className='rating'>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star"></span>
+            <span className="fa fa-star"></span>
+          </div>
+        </div>
+
+      </div>
+      <img src='https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/basil-leaf.png' alt="im" className='mid-img' align="center" />
+
+      <div className="other-products">
+        <div className='p1'>
+          <h3>
+            A
+          </h3>
+          <p>B</p>
+
+          <button className='button'>Shop Now --></button>
+          {/* <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product11-free-img.jpg" alt="img" className='product-img'/> */}
+        </div>
+        <div className='p2'>
+          <h3>Certified</h3>
+          <p>D</p>
+          <button className='button'>Shop Now --></button>
+          {/* <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product13-free-img.jpg" alt="img" /> */}
+
+        </div>
+        <div className='p3'>
+          <h3>E</h3>
+          {/* <p><F</p> */}
+          <button className='button'>Shop Now --></button>
+          <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product17-free-img.jpg" alt="img" />
+        </div>
+      </div>
+
+
 
     </div>
   )
