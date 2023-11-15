@@ -51,7 +51,7 @@
 
 .button1 {
   padding: 10px 80px;
-  background-color: rgb(106, 151, 57);
+  background-color: #6a9739;
   color: white;
   border: none;
   border-radius: 5px;
@@ -87,7 +87,7 @@
   background-color: #111111;
   padding-left: 80px;
  padding-top: 40px;
- padding-bottom: 40px;
+ padding-bottom: 90px;
  padding-right: 80px;
  
 }
@@ -95,6 +95,8 @@
   background-color: rgb(48,48,48);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 30px;
+  color: white;
+  /* text:whi */
   /* padding-lef: 40px; */
   font-size: 20px;
   text-align: center;
@@ -109,6 +111,8 @@
   padding: 30px;
   padding-left: 40px;
   font-size: 20px;
+  color: white;
+
   text-align: center;
   border-radius: 3px 2px 3px 3px;
   margin: 30px;
@@ -121,6 +125,8 @@
   padding: 30px;
   padding-left: 40px;
   font-size: 20px;
+  color: white;
+
   text-align: center;
   border-radius: 3px 2px 3px 3px;
   margin: 30px;
@@ -130,6 +136,8 @@
   background-color: rgb(48,48,48);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 30px;
+  color: white;
+
   padding-left: 40px;
   font-size: 20px;
   text-align: center;
@@ -146,4 +154,158 @@
   font-size: 25px;
   font-weight: 700;
   text-align: center;
+}
+
+/* star rating */
+.checked {
+  color: orange;
+}
+.product{
+  display: flex;
+  padding-bottom: 15rem;
+
+}
+.product-main{
+  text-align: center;
+}
+.rating{
+  text-align: center;
+}
+.product-item1{
+  padding-left:5rem ;
+  padding-top: 5rem;
+  
+}
+.product-item2,.product-item3{
+  padding-left:1rem ;
+  padding-top: 5rem;
+  
+}
+.product-item4{
+  padding-left:1rem ;
+  padding-top: 5rem;
+  padding-right: 5rem;
+  
+  /* padding-right: 90px; */
+}
+.sale{
+  background-color: #6a9739;
+  color: black;
+  top: 0;
+  right: 0;
+  left: auto;
+  margin: -0.5em -0.5em 0 0;
+  min-width: 3em;
+  min-height: 3em;
+  padding: 0;
+  /* padding-right: ; */
+  font-size: .8em;
+  font-weight: 400;
+  /* position: right; */
+  position: absolute;
+  text-align: center;
+  border-radius: 100%;
+  z-index: 9;
+  -webkit-font-smothing:antialiased;
+}
+.mid-img {
+  width: 15%;
+  display: block;
+  margin: auto;
+  height: auto;
+  max-width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  text-align: center;
+}
+.elementor .elementor-background-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.other-products {
+  display: flex;
+  padding: 60px 20px;
+  background-color: #f1f1f1;
+}
+
+.p1 {
+  height: 50rem;
+  width: 50rem;
+  text-align: center;
+  background-color: white;
+  background-image: url(https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product11-free-img.jpg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
+  border-radius: 1rem;
+  font-size: 30px;
+  margin: 30px; /* Adjust this value as needed */
+  padding-left: 10rem; /* Adjust this value as needed */
+}
+
+.p2{
+  /* background-color:white; */
+  background-image: url("https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product13-free-img.jpg ");
+  margin: 70px;
+  /* padding: 20px; */
+  padding-left: 15rem;
+  font-size: 30px;
+  border-radius: 1rem;
+  text-align: justify;
+}
+.p3{
+  background-color:white;
+  margin: 70px;
+  /* padding: 20px; */
+  font-size: 30px;
+  padding-left: 5rem;
+  padding-right: 10rem;
+}
+.h3{
+  display: block;
+  margin-block-end: 1em;
+  margin-block-start: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+}
+/* .flex-container > div {
+  background-color:white;
+  margin: 70px;
+  padding: 20px;
+  font-size: 30px;
+} */
+.product-img{
+  height:100%;
+  width: auto;
+}
+
+
+
+
+
+.button{
+  font-size:.875rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-top: 17px;
+  padding-right: 34px;
+  padding-bottom: 17px;
+  padding-left: 34px;
+  width: auto;
+  text-transform: uppercase;
+  border-color: #6a9739;
+  background-color: #6a9739;
+  border-style: solid;
+  text-align: center;
+}
+.product-img{
+
 }
