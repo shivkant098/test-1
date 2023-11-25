@@ -1,5 +1,6 @@
 import React from 'react'
 import "./home.css";
+import FeatureProduct from '../components/FeatureProduct';
 const Home = () => {
   return (
     <div>
@@ -125,29 +126,10 @@ const Home = () => {
       <img src='https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/basil-leaf.png' alt="im" className='mid-img' align="center" />
 
       <div className="other-products">
-        <div className='p1'>
-          <h3>
-            A
-          </h3>
-          <p>B</p>
-
-          <button className='button'>Shop Now --></button>
-          {/* <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product11-free-img.jpg" alt="img" className='product-img'/> */}
+        
+        <FeatureProduct/>
+        
         </div>
-        <div className='p2'>
-          <h3>Certified</h3>
-          <p>D</p>
-          <button className='button'>Shop Now --></button>
-          {/* <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product13-free-img.jpg" alt="img" /> */}
-
-        </div>
-        <div className='p3'>
-          <h3>E</h3>
-          {/* <p><F</p> */}
-          <button className='button'>Shop Now --></button>
-          <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product17-free-img.jpg" alt="img" />
-        </div>
-      </div>
 
 
 
