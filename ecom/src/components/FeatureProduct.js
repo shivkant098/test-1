@@ -1,13 +1,32 @@
 import { useProductContext } from "../context/productcontext";
-
+import Product from "./Product";
 // import React from 'react'
 const FeatureProduct = () => {
     const {isLoading,featureProducts}=useProductContext();
-console.log('file-featureProducts',featureProducts);
-// https://www.youtube.com/watch?v=aCgk0M7aSQY&list=PLwGdqUZWnOp0f3nfgWGbk3_fe8hoMIYpA&index=17n   4:24
+  
+  if(isLoading){
+    return <div>....Loading</div>;
+  }
   return (
-    <div>feature</div>
-  )
+<>
+<div className="section">
+  <div className="conatiner">
+    <div className="intro-data">Check Now !</div>
+    <div className='common-heading'>Our Features Products</div>
+
+<div className="gird gird-three-column">
+  {
+    featureProducts.map((curElem)=>{
+      return <Product  key={curElem.id}{...curElem}/>;
+    })
+  }
+</div>
+
+  </div>
+
+</div>
+</>
+    )
 }
 
 export default FeatureProduct;
