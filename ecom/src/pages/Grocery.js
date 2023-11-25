@@ -1,9 +1,18 @@
 import React from 'react'
+import { useProductContext } from '../context/productcontext';
+// import { AppContext } from '../context/productcontext';
 
 const Grocery = () => {
+    const {name}=useProductContext();
+
   return (
-    <div>Grocery</div>
+    <div>
+      
+      {name}
+      
+      
+      </div>
   )
 }
 
-export default Grocery
+export default Grocery;
