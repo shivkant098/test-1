@@ -35,6 +35,7 @@
 .card-data h3,
 .card-data--price,
 .caption {
+    align-items: center;
     color: black;
     margin: 0;
     text-decoration: none; /* Remove underline for the whole card */
