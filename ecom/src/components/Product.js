@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from "styled-components";
+// import styled from "styled-components";
 
 import "./product.css";
 import { NavLink } from 'react-router-dom';
@@ -13,6 +13,7 @@ const Product = (curElem) => {
                     <figcaption className='caption'>{category}</figcaption>
 
                 </figure>
+                </div>
                 <div className='card-data'>
                     <div className='card-data-flex'>
                         <h3>{name}</h3>
@@ -20,7 +21,7 @@ const Product = (curElem) => {
                             {price}
                         </p>
                     </div>
-                </div>
+                {/* </div> */}
             </div>
         </NavLink>
 
