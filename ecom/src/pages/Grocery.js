@@ -1,14 +1,14 @@
 import React from 'react'
-import { useProductContext } from '../context/productcontext';
+// import { useProductContext } from '../context/productcontext';
 // import { AppContext } from '../context/productcontext';
 
 const Grocery = () => {
-    const {name}=useProductContext();
+    // const {name}=useProductContext();
 
   return (
     <div>
-      
-      {name}
+      hi
+      {/* {name} */}
       
       
       </div>
