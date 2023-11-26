@@ -1,34 +1,32 @@
-import { useProductContext } from "../context/productcontext";
-import Product from "./Product";
-import "./product.css";
+import React from 'react';
+import './product.css';
+import { useProductContext } from '../context/productcontext';
+import Product from './Product';
 
-// import React from 'react'
 const FeatureProduct = () => {
-    const {isLoading,featureProducts}=useProductContext();
-  
-  if(isLoading){
+  const { isLoading, featureProducts } = useProductContext();
+
+  if (isLoading) {
     return <div>....Loading</div>;
   }
+
   return (
-<>
-<div className="section">
-  <div className="conatiner">
-    <div className="intro-data">Check Now !</div>
-    <div className='common-heading'>Our Features Products</div>
-
-<div className="gird gird-three-column">
-  {
-    featureProducts.map((curElem)=>{
-      return <Product  key={curElem.id}{...curElem}/>;
-    })
-  }
-</div>
-
-  </div>
-
-</div>
-</>
-    )
-}
+    <>
+      <div className="section">
+        <div className="container">
+          <center>
+          <div className="intro-data ">Check Now !</div>
+          <div className='common-heading'>Our Features Products</div>
+</center>
+          <div className="card-container">
+            {featureProducts.map((curElem) => (
+              <Product key={curElem.id} {...curElem} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default FeatureProduct;
