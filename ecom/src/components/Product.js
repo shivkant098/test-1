@@ -8,7 +8,7 @@ const Product = ({ id, name, image, price, category }) => {
       <div className='card'>
         <figure className='gfg'>
           <img src={image} className='img1' alt={name} />
-          <figcaption className='caption'>{category}</figcaption>
+          {/* <figcaption className='caption'>{category}</figcaption> */}
           {/* <h3 class="first-txt">
             {name}
         </h3> */}

@@ -229,7 +229,6 @@ const Home = () => {
       
       <section id="testimonials">
         <div class="testimonial-heading">
-            <span>Comments</span>
             <h1>Clients Says</h1>
         </div>
         <div class="testimonial-box-container">
@@ -237,11 +236,11 @@ const Home = () => {
                 <div class="box-top">
                     <div class="profile">
                         <div class="profile-img">
-                            <img src="images/c-1.jpg" />
+                            <img src="https://i.ibb.co/RB7ncgD/golu.jpg" alt='im1'/>
                         </div>
                         <div class="name-user">
-                            <strong>Touseeq Ijaz</strong>
-                            <span>@touseeqijazweb</span>
+                            <strong>Shiv Kant Kumar</strong>
+                            <span>shiv@gmail.com</span>
                         </div>
                     </div>
                     <div class="reviews">
@@ -249,7 +248,7 @@ const Home = () => {
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i><!--Empty star-->
+                        <i class="far fa-star"></i>
                     </div>
                 </div>
                 <div class="client-comment">
@@ -260,11 +259,11 @@ const Home = () => {
                 <div class="box-top">
                     <div class="profile">
                         <div class="profile-img">
-                            <img src="images/c-2.jpg" />
+                            <img src="https://i.ibb.co/dg1JgCm/Whats-App-Image-2023-11-26-at-10-12-05-PM-1.jpg" alt='img1' />
                         </div>
                         <div class="name-user">
-                            <strong>J.K Rowling</strong>
-                            <span>@jkrowling</span>
+                            <strong>Anchal</strong>
+                            <span>anchal@gmail.com</span>
                         </div>
                     </div>
                     <div class="reviews">
@@ -272,7 +271,8 @@ const Home = () => {
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i><!--Empty star-->
+                        <i class="fas fa-star"></i>
+
                     </div>
                 </div>
                 <div class="client-comment">
@@ -283,31 +283,50 @@ const Home = () => {
                 <div class="box-top">
                     <div class="profile">
                         <div class="profile-img">
-                            <img src="images/c-3.jpg" />
+                            <img src="https://i.ibb.co/7GGq1Ch/Whats-App-Image-2023-11-26-at-10-12-05-PM.jpg" alt='img1' />
                         </div>
-                        <!--name-and-username-->
                         <div class="name-user">
                             <strong>Harry Potter</strong>
-                            <span>@DanielRedclief</span>
+                            <span>harry@gmail.com</span>
                         </div>
                     </div>
-                    <!--reviews------>
                     <div class="reviews">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i><!--Empty star-->
+                        <i class="far fa-star"></i>
                     </div>
                 </div>
-                <!--Comments---------------------------------------->
                 <div class="client-comment">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
                 </div>
             </div>
-            <!--BOX-4-------------->
             <div class="testimonial-box">
-                <!--top------------------------->
+            <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="https://i.ibb.co/7GGq1Ch/Whats-App-Image-2023-11-26-at-10-12-05-PM.jpg" alt="img1" />
+                        </div>
+                        <div class="name-user">
+                            <strong>AK</strong>
+                            <span>ak@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                </div>
+            </div>
+        </div>
+    </section>
      
 
 
