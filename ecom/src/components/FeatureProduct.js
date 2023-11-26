@@ -1,5 +1,7 @@
 import { useProductContext } from "../context/productcontext";
 import Product from "./Product";
+import "./product.css";
+
 // import React from 'react'
 const FeatureProduct = () => {
     const {isLoading,featureProducts}=useProductContext();
