@@ -7,6 +7,8 @@ const initialState={
     isError:false,
     products:[],
     featureProducts:[],
+    isSingleLoading:false,
+    singleProduct:{},
 };
 const AppContext = createContext();
 const API="https://api.pujakaitem.com/api/products";
@@ -27,13 +29,27 @@ const AppProvider = ({ children }) => {
           // Handle the error, e.g., set an error state
         }
       };
-      
+      // my second api call for single products
+      const getSingleProduct=async(url)=>{
+        dispatch ({type:'set_single_loading'});
+
+        try{
+          const res = await axios.get(url);
+        //   console.log("file", res);
+        const singleProduct=await res.data;
+        dispatch({type:'set_single_product',payload:singleProduct});
+
+        }catch(error){
+          dispatch ({type:'single_error'});
+
+        }
+      }
     useEffect(()=>{
 getProducts(API);
     },
     
    [] );
-  return <AppContext.Provider value={{...state}}>{children}</AppContext.Provider>;
+  return <AppContext.Provider value={{...state,getSingleProduct}}>{children}</AppContext.Provider>;
 };
 
 // custom hooks
