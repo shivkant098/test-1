@@ -1,91 +1,84 @@
-// import { useState } from "react";
-// import Navigation from "./Shop/Navigation/Nav";
-// import Card from "./Shop/Card";
-// import Recommended from "./Shop/Recommended/Recommended";
-// import Products from "./Shop/Products/Products";
-// import Sidebar from "./Shop/Sidebar";
+import React from "react";
 
-// const Everything = () => {
-//   const [selectedCategory, setSelectedCategory] = useState(null);
-//   const [query, setQuery] = useState("");
+import { useState } from "react";
 
-//   const handleInputChange = (event) => {
-//     setQuery(event.target.value);
-//   };
+import Navigation from "../Navigation/Nav";
+import Products from "../Products/Products";
+import products from "../db/data";
+import Recommended from "../Recommended/Recommended";
+import Sidebar from "../Sidebar/Sidebar";
+import Card from "../components/Card";
+import "../index.css";
 
-//   const filteredItems = Products.filter(
-//     (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
-//   );
+function Everything() {
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
-//   const handleChange = (event) => {
-//     setSelectedCategory(event.target.value);
-//   };
+  // ----------- Input Filter -----------
+  const [query, setQuery] = useState("");
 
-//   const handleClick = (event) => {
-//     setSelectedCategory(event.target.value);
-//   };
+  const handleInputChange = (event) => {
+    setQuery(event.target.value);
+  };
 
-//   function filteredData(products, selected, query) {
-//     let filteredProducts = products;
+  const filteredItems = products.filter(
+    (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
+  );
 
-//     if (query) {
-//       filteredProducts = filteredItems;
-//     }
+  // ----------- Radio Filtering -----------
+  const handleChange = (event) => {
+    setSelectedCategory(event.target.value);
+  };
 
-//     if (selected) {
-//       filteredProducts = filteredProducts.filter(
-//         ({ category, color, company, newPrice, title }) =>
-//           category === selected ||
-//           color === selected ||
-//           company === selected ||
-//           newPrice === selected ||
-//           title === selected
-//       );
-//     }
+  // ------------ Button Filtering -----------
+  const handleClick = (event) => {
+    setSelectedCategory(event.target.value);
+  };
 
-//     return filteredProducts.map(({ img, title, star, reviews, prevPrice, newPrice }) => (
-//       <Card
-//         key={title} // Use a unique identifier from your data as the key
-//         img={img}
-//         title={title}
-//         star={star}
-//         reviews={reviews}
-//         prevPrice={prevPrice}
-//         newPrice={newPrice}
-//       />
-//     ));
-//   }
+  function filteredData(products, selected, query) {
+    let filteredProducts = products;
 
-//   const result = filteredData(Products, selectedCategory, query);
+    // Filtering Input Items
+    if (query) {
+      filteredProducts = filteredItems;
+    }
 
-//   return (
-//     <>
-//       <h1>hiii</h1>
-//       <Sidebar handleChange={handleChange} />
-//       <Navigation query={query} handleInputChange={handleInputChange} />
-//       <Recommended handleClick={handleClick} />
-//       <Products result={result} />
-//     </>
-//   );
-// };
+    // Applying selected filter
+    if (selected) {
+      filteredProducts = filteredProducts.filter(
+        ({ category, color, company, newPrice, title }) =>
+          category === selected ||
+          color === selected ||
+          company === selected ||
+          newPrice === selected ||
+          title === selected
+      );
+    }
 
-// export default Everything;
+    return filteredProducts.map(
+      ({ img, title, star, reviews, prevPrice, newPrice }) => (
+        <Card
+          key={Math.random()}
+          img={img}
+          title={title}
+          star={star}
+          reviews={reviews}
+          prevPrice={prevPrice}
+          newPrice={newPrice}
+        />
+      )
+    );
+  }
 
-import React from 'react'
-// import { useProductContext } from '../context/productcontext';
-// import { AppContext } from '../context/productcontext';
-
-const Everything = () => {
-    // const {name}=useProductContext();
+  const result = filteredData(products, selectedCategory, query);
 
   return (
-    <div>
-      hi
-      {/* {name} */}
-      
-      
-      </div>
-  )
+    <>
+      <Sidebar handleChange={handleChange} />
+      <Navigation query={query} handleInputChange={handleInputChange} />
+      <Recommended handleClick={handleClick} />
+      <Products result={result} />
+    </>
+  );
 }
 
 export default Everything;
