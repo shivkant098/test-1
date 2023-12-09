@@ -1,12 +1,14 @@
-/* product.css */
+product.css
 
 .card-container {
     display: flex;
     justify-content: space-around;
-    margin: -10px; 
+    margin: 200px; 
+
 }
 
 .card {
+    display: flex;
     flex: 0 0 calc(30% - 20px);
     margin: 10px;
     box-sizing: border-box;

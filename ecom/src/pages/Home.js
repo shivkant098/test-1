@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home.css";
-import FeatureProduct from '../components/FeatureProduct';
+// import FeatureProduct from '../components/FeatureProduct';
 const Home = () => {
   return (
     <div>
@@ -136,7 +136,7 @@ const Home = () => {
 
       <div className="other-products">
 
-        <FeatureProduct />
+        {/* <FeatureProduct /> */}
 
       </div>
       <div className='banner1'>
