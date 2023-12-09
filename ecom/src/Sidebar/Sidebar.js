@@ -2,7 +2,6 @@ import React from  "react";
 
 import Category from "./Category/Category";
 import Price from "./Price/Price";
-import Colors from "./Colors/Colors";
 import "./Sidebar.css";
 // import React from  "react";
 
@@ -16,7 +15,6 @@ const Sidebar = ({ handleChange }) => {
         </div>
         <Category handleChange={handleChange} />
         <Price handleChange={handleChange} />
-        <Colors handleChange={handleChange} />
       </section>
     </>
   );
