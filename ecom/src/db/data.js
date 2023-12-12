@@ -4,6 +4,8 @@ const data = [
   {
     img: "https://thumbs.dreamstime.com/z/ripe-orange-citrus-fruit-isolated-white-single-clipping-path-44798485.jpg",
     title: "Orange",
+    desc:"lpre, nndf",
+
     star: <AiFillStar className="rating-star" />,
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -15,6 +17,7 @@ const data = [
   {
     img: 'https://images.unsplash.com/photo-1550258987-190a2d41a8ba?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D',
     title: "Pine Apple",
+    desc:"dfkl nkn",
     star: <AiFillStar className="rating-star" />,
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
