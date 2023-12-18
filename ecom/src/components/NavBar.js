@@ -7,6 +7,9 @@ import "./NavBar.css";
 import { HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
 import Grocery from '../pages/Grocery';
 import Contact from '../pages/Contact';
+import ProductDetailPage from "../pages/ProductDetails";
+// import Everything from "./path-to/Everything";
+
 import Everything from '../pages/Everything';
 import Cart from '../pages/Cart';
 import About from '../pages/About';
@@ -132,6 +135,8 @@ function NavBar() {
         <div className="pages">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/products/:title" component={ProductDetailPage} />
+
             <Route path="/everything" element={<Everything />} />
             <Route path="/grocery" element={<Grocery />} />
             <Route path="/about" element={<About />} />
