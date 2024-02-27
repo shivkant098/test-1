@@ -5,9 +5,9 @@ import { faUser, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, NavLink, Routes, Route } from "react-router-dom";
 import "./NavBar.css";
 import { HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
-import Grocery from '../pages/Grocery';
+// import Grocery from '../pages/Grocery';
 import Contact from '../pages/Contact';
-import ProductDetailPage from "../pages/ProductDetails";
+// import ProductDetailPage from "../pages/ProductDetails";
 // import Everything from "./path-to/Everything";
 
 import Everything from '../pages/Everything';
@@ -48,7 +48,7 @@ function NavBar() {
                   Everything
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink
                   exact
                   to="/grocery"
@@ -58,9 +58,9 @@ function NavBar() {
                 >
                   Groceries
                 </NavLink>
-              </li>
+              </li> */}
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink
                   exact
                   to="/juice"
@@ -70,7 +70,7 @@ function NavBar() {
                 >
                   Juice
                 </NavLink>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <NavLink
@@ -135,10 +135,10 @@ function NavBar() {
         <div className="pages">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/products/:title" component={ProductDetailPage} />
+            {/* <Route path="/products/:title" component={ProductDetailPage} /> */}
 
             <Route path="/everything" element={<Everything />} />
-            <Route path="/grocery" element={<Grocery />} />
+            {/* <Route path="/grocery" element={<Grocery />} /> */}
             <Route path="/about" element={<About />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />
